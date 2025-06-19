@@ -1,0 +1,120 @@
+[
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+
+  {
+    "key": "down",
+    "command": "multiCommand.navigateExplorerDownAndPreviewFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && listFocus && !inputFocus"
+  },
+  {
+    "key": "up",
+    "command": "multiCommand.navigateExplorerUpAndPreviewFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && listFocus && !inputFocus"
+  },
+  // {
+  //   "key": "enter",
+  //   "command": "-renameFile",
+  //   "when": "filesExplorerFocus && !inputFocus"
+  // },
+  {
+    "key": "enter",
+    "command": "explorer.openAndPassFocus",
+    "when": "filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "list.toggleExpand",
+    "when": "filesExplorerFocus && !explorerResourceIsRoot && explorerResourceIsFolder && !inputFocus"
+  },
+  // {
+  //   "key": "shift+cmd+e",
+  //   "command": "workbench.view.explorer",
+  //   "when": "viewContainer.workbench.view.explorer.enabled"
+  // },
+  // {
+  //   "key": "alt+cmd+1",
+  //   "command": "workbench.view.explorer",
+  //   "when": "viewContainer.workbench.view.explorer.enabled"
+  // },
+  // {
+  //   "key": "alt+cmd+2",
+  //   "command": "workbench.view.extension.todo-tree-container"
+  // },
+  // {
+  //   "key": "alt+cmd+3",
+  //   "command": "workbench.view.scm",
+  //   "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  // },
+  // {
+  //   "key": "alt+cmd+4",
+  //   "command": "workbench.panel.chat",
+  //   "when": "workbench.panel.chat.view.copilot.active"
+  // },
+  // {
+  //   "key": "ctrl+shift+g",
+  //   "command": "-workbench.view.scm",
+  //   "when": "workbench.scm.active"
+  // },
+  // {
+  //   "key": "alt+cmd+5",
+  //   "command": "workbench.panel.chatEditing",
+  //   "when": "workbench.panel.chat.view.edits.active"
+  // },
+  // {
+  //   "key": "alt+cmd+6",
+  //   "command": "workbench.view.extension.claude-dev-ActivityBar"
+  // },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+
+  {
+    "key": "cmd+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  }
+
+  // Terminal
+  // {
+  //   "key": "ctrl+l",
+  //   "command": "workbench.action.terminal.clear",
+  //   "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+  // },
+  // {
+  //   "key": "cmd+k",
+  //   "command": "-workbench.action.terminal.clear",
+  //   "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled || accessibilityModeEnabled && accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewIsShown && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+  // }
+
+  // Copilot
+  // {
+  //   "key": "ctrl+cmd+i",
+  //   "command": "-workbench.panel.chat",
+  //   "when": "workbench.panel.chat.view.copilot.active"
+  // },
+  // {
+  //   "key": "shift+cmd+i",
+  //   "command": "-workbench.panel.chatEditing",
+  //   "when": "workbench.panel.chat.view.edits.active"
+  // },
+]
